@@ -13,25 +13,14 @@
     <button class="bg-button text-2xl text-white w-full py-2 rounded-lg">Записаться</button>
 </div> -->
 <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-  <img
-    class="w-full h-48 object-cover object-center md:h-56 lg:h-64"
-    src="{{ asset('/storage/products/hirurg1.jpg') }}"
-    alt="Фото врача"
-  />
+  <img class="w-full h-48 object-cover object-center md:h-56 lg:h-64" src="{{ url('storage', $product->image) }}" alt="Фото врача"/>
   <div class="p-4 flex-grow">
-    <h3 class="text-xl font-semibold text-gray-800 mb-2">Козлов Александр</h3>
-    <p class="text-gray-600 mb-2">Хирург</p>
-    <p class="text-gray-700 text-sm">
-      Врач-хирург с 10 летним опытом. Стремлюсь к применению передовых технологий и методик для эффективного лечения хирургических заболеваний.
-    </p>
+    <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ $product->name }}</h3>
+    <p class="text-gray-700 text-sm"> {{ $product->description }}</p>
   </div>
   <div class="p-4 flex justify-between items-center">
-    <span class="text-gray-500 text-sm">Стаж: 10 лет</span>
     <a
-      href="#"
-      class="bg-primary text-black py-2 px-4 rounded-md hover:bg-sky-500"
-      >Записаться на прием</a
-    >
+      href="#" class="bg-primary text-black py-2 px-4 rounded-md hover:bg-sky-500">Записаться на прием</a>
   </div>
 </div>
 

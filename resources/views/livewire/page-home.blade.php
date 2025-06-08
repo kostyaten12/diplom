@@ -10,15 +10,13 @@
                     Мы предлагаем широкий спектр медицинских услуг, отвечающих вашим
                     индивидуальным потребностям. Доверьтесь профессионалам!
                 </p>
-                <a
-                    href="#"
+                <a href="#"
                     class="inline-block bg-secondary text-white py-3 px-6 rounded-md hover:bg-sky-500 transition-colors duration-300"
                 >
                     Записаться на прием
                 </a>
             </div>
 
-            <!-- Изображение баннера -->
             <div class="relative">
                 <img
                     class="w-full rounded-lg shadow-lg object-cover object-center aspect-video"
@@ -29,11 +27,6 @@
         </div>
     </div>
 </section>
-<!-- <section>
-         <div class="container py-6 px-0">
-             <img class="w-full" src="{{ asset('/storage/') }}" alt="баннер главной страницы">
-        </div>
-    </section> -->
     <section id="about-us" class="py-10">
         <div class="container mx-auto px-4">
             <div class="text-center">

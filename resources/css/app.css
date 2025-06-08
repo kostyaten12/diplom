@@ -5,3 +5,22 @@
 body {
     background-color: #F4F4F4;
 }
+
+
+/* Дополнительные стили (если нужно) */
+.menu.active {
+    display: flex !important; /* !important нужен, чтобы переопределить Tailwind */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.9); /* Полупрозрачный фон */
+    padding: 10px;
+    text-align: center;
+    z-index: 10; /* Чтобы меню было поверх контента */
+}
+
+.menu.active li {
+    padding: 10px;
+}

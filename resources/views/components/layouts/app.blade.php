@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? 'Интернет магазин' }}</title>
+    <title>{{ $title ?? 'Клиника' }}</title>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     @vite('resources/css/app.css')
@@ -15,6 +15,7 @@
         {{ $slot }}
     </main>
     <livewire:partials.footer />
+    @vite('resources/js/app.js')
     @livewireScripts
   </body>
 </html>
