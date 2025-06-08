@@ -6,7 +6,8 @@
     <title>{{ $title ?? 'Клиника' }}</title>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
+    <!-- @vite('resources/css/app.css') -->
     @livewireStyles
   </head>
   <body>
@@ -15,7 +16,8 @@
         {{ $slot }}
     </main>
     <livewire:partials.footer />
-    @vite('resources/js/app.js')
+    <script src="{{ asset('resources/js/my-script.js') }}"></script>
+    <!-- @vite('resources/js/app.js') -->
     @livewireScripts
   </body>
 </html>
